@@ -1,0 +1,321 @@
+/*========================= GOOGLE FONTS =========================*/
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500&display=swap');
+/*========================= VARIABLES CSS =========================*/
+:root {
+  /*____________________ Colors ____________________*/
+  --clr-dark: #101415;
+  --clr-gray: #1C2121;
+  --clr-light: #E5E1D6;
+  --clr-theme: #001AFF;
+  --clr-white: #fff;
+  --clr-hover: orangered;
+
+  /*____________________ Font and typography ____________________*/
+  --font-family-text1: 'Lexend', sans-serif;
+  --font-family-text2: "Poppins", sans-serif;
+
+  /*____________________ Font Size ____________________*/
+  /* Desktop Font size */
+  --fs-subtext: 1.25rem;
+  --fs-text: 1.5rem;
+
+  --fs-subtitle: 2rem;
+  --fs-title: 2.5rem;
+
+  --fs-huge: 6.5rem;
+  --fs-icon-contact: 1rem;
+  --fs-icon-text: 0.75rem;
+
+  /*____________________ Font Weight ____________________*/
+  --fw-thin: 200;
+  --fw-medium: 300;
+  --fw-semi-bold: 400;
+  --fw-bold: 500;
+
+  /*____________________ z index ____________________*/
+  --z-lowest: -10;
+  --z-low: -5;
+  --z-high: 5;
+  --z-highest: 10;
+}
+
+/*____________________ Title and Text ____________________*/
+.text__logo {
+    font-size: var(--fs-huge);
+    font-weight: 200;
+    color: black;
+}
+.text__title {
+    font-size: var(--fs-title);
+}
+.title__small {
+    font-size: var(--fs-subtext);
+    font-weight: 400;
+}
+.text__subtitle {
+    font-size: 1.125rem;
+    font-weight: var(--fw-thin);
+    margin-top: 8px;
+}
+/*____________________ Button ____________________*/
+/* .button {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--clr-light);
+  font-weight: var(--fw-medium);
+  color: var(--clr-light);
+  font-size: var(--fs-small);
+}
+.button:hover {
+  color: red;
+  background-color: white;
+} */
+/*========================= BASE =========================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: var(--fs-text);
+  font-weight: var(--fw-medium);
+  font-family: var(--font-family-text1);
+  color: var(--clr-dark);
+  letter-spacing: 3.5px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*========================= NAVIGATION BAR =========================*/
+nav {
+    height: 4rem;
+    position: fixed;
+    margin: 60px 0 0 60px;
+    z-index: var(--z-highest);
+    border: 1px solid var(--clr-light);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav__links {
+    width: 600px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav__links li a {
+    color: var(--clr-light);
+    font-size: var(--fs-subtext);
+    font-weight: var(--fw-thin);
+}
+.nav__links li a:hover:not(.active) {
+    background-color: #b5b5b5;
+}
+/* .active {
+    background-color: #00d0ff;
+} */
+.hor__line {
+    width: 150px;
+    height: 1.5px;
+    background-color: var(--clr-light);
+}
+/*========================= CONTACT SECTION =========================*/
+.contact__sidebar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: var(--z-high);
+    overflow: hidden;
+
+    width: 150px;
+    min-height: 280px;
+    letter-spacing: 1.5px;
+    background-color: var(--clr-white);
+    box-shadow: -20px 20px 50px rgba(0,0,0,0.15);
+    transition: 0.5s;
+
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.contact__sidebar.contact__active {
+    width: 450px;
+}
+.contact__sidebar .contact__toggle {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__sidebar .contact__toggle::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 3.75px;
+    background: var(--clr-dark);
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+.contact__sidebar .contact__toggle::after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 1.75px;
+    background: var(--clr-dark);
+    transform: translateY(5px);
+    transition: 0.5s;
+}
+
+.contact__sidebar.contact__active .contact__toggle::before {
+    transform:  translateY(0px) rotate(45deg);
+}
+.contact__sidebar.contact__active .contact__toggle::after {
+    transform:  translateY(0px) rotate(-45deg);
+}
+.contact__info {
+    display: flex;
+    align-items: center;
+}
+.contact__img {
+    width: 180px;
+    height: 180px;
+}
+
+.profile__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid var(--clr-gray);
+    
+}
+.contact__sidebar .contact__links {
+    position: relative;
+    width: 100%;
+    margin: 10px;
+    transition: 0.5s;
+}
+.contact__sidebar.contact__active .contact__links {
+    padding: 10px 30px;
+}
+.contact__sidebar .contact__links li a {
+    position: relative;
+    display: flex;
+    color: var(--clr-dark);
+}
+.contact__sidebar .contact__links li a:hover {
+    background-color: var(--clr-gray);
+    color: var(--clr-light);
+}
+
+.contact__sidebar .contact__links li a .icon {
+    position: relative;
+    min-width: 60px;
+    height: 50px;
+    font-size: var(--fs-icon-contact);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__sidebar .contact__links li a .contact__icon-text {
+    position: relative;
+    height: 50px;
+    font-size: var(--fs-icon-text);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*========================= REUSE SECTION =========================*/
+.page__section {
+    height: 100vh;
+}
+.top__section {
+    height: 70vh;
+    color: var(--clr-light);
+    background-color: var(--clr-gray);
+    padding: 60px;
+
+    display: grid;
+    grid-template-columns: 55% 40%;
+}
+.bot__section {
+    height: 30vh;
+    width: 100%;
+    padding-left: 60px;
+
+    display: flex;
+    align-items: center;
+}
+.info__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/*========================= Artwork SECTION =========================*/
+.artwork__img-container {
+    display: flex;
+    justify-content: center;
+}
+.img__border {
+    width: 550px;
+    height: 100%;
+    border: 1px solid var(--clr-light);
+    background-color: var(--clr-white);
+
+    display: flex;
+    justify-content: center;
+}
+.artwork__img-cover {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 4rem;
+    object-fit: cover;
+}
+.title__arrow {
+    margin-top: 20px;
+    width: 300px;
+}
+.info__work {
+    width: 800px;
+    height: 160px;
+    margin-left: 30px;
+    color: var(--clr-gray);
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.view__work {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*========================= ABOUT SECTION =========================*/
