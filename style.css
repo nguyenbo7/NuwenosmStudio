@@ -44,7 +44,7 @@
 .text__logo {
     font-size: var(--fs-huge);
     font-weight: 200;
-    color: black;
+    /* color: black; */
 }
 .text__title {
     font-size: var(--fs-title);
@@ -56,7 +56,7 @@
 .text__subtitle {
     font-size: 1.125rem;
     font-weight: var(--fw-thin);
-    margin-top: 8px;
+    margin-top: 5px;
 }
 /*____________________ Button ____________________*/
 /* .button {
@@ -318,4 +318,94 @@ nav {
     justify-content: center;
 }
 
-/*========================= ABOUT SECTION =========================*/
+/*========================= Studio SECTION =========================*/
+.studio__section {
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 55% 40%;
+}
+.studio__info {
+    /* background-color: grey; */
+    width: 600px;
+    margin-top: 150px;
+}
+.studio__work {
+    /* background-color: antiquewhite; */
+    margin-top: 150px;
+}
+.accordion__body {
+    max-width: 650px;
+}
+.accordion__container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.25rem;
+}
+.accordion__item {
+    position: relative;
+    margin: 10px 10px;
+}
+  
+.accordion__label {
+    position: relative;
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+.accordion__title {
+    font-size: 1.125rem;
+    position: relative;
+    color: #0E1515;
+}
+.accordion__tags {
+    display: flex;
+    margin: 0.5rem auto 0;
+}
+  
+.accordion__tags li {
+    font-size: 12px;
+    color: var(--clr-dark);
+    padding-right: 5px;
+}
+.accordion__arrow {
+    position: absolute;
+    top: 40%;
+    right: -5px;
+    color: var(--clr-light);
+    font-size: 2rem;
+}
+.accordion__tags .uil-arrow-down {
+    display: none;
+}
+  
+.accordion__content {
+    height: 0;
+    font-size: 14px;
+    padding: 0 1.25rem;
+    margin-top: 0.25rem;
+    background-color: var(--clr-dark);
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+
+    display: flex;
+    align-items: center;
+}
+  
+.accordion__line {
+    border: 1px solid black;
+  }
+  
+.accordion__item.active .accordion__content {
+    height: 150px;
+  }
+  
+.accordion__item.active .accordion__label .accordion__tags .uil-arrow-right {
+    display: none;
+  }
+.accordion__item.active .accordion__label .accordion__tags .uil-arrow-down {
+    display: block;
+}
+  
+.accordion__item.active .accordion__title {
+    color: orangered;
+}

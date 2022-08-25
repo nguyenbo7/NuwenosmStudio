@@ -1,26 +1,13 @@
-// ==================== Swiper JS ====================
-// let swiper = new Swiper(".mySwiper", {
-    
-//     spaceBetween: 10,
-//     slidesPerView: 4,
-//     freeMode: true,
-//     watchSlidesProgress: true,
-// });
-// let swiper2 = new Swiper(".mySwiper2", {
-//     spaceBetween: 10,
-//     thumbs: {
-//       swiper: swiper,
-//     },
-// });
+//*==================== Accordion Experience ====================*/
+const accordion = document.getElementsByClassName('accordion__item');
 
-let swiper = new Swiper(".mySwiper", {
-    pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
-    },
-  });
+for (let i=0; i<accordion.length; i++) {
+  accordion[i].addEventListener('click', function () {
+    this.classList.toggle('active')
+  })
+}
 
-// ==================== Swiper JS ====================
+// ==================== Contact JS ====================
 const contact__toggle = document.querySelector('.contact__toggle');
 const contact__sidebar = document.querySelector('.contact__sidebar');
 
