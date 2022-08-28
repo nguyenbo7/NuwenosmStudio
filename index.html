@@ -18,75 +18,74 @@
 <body>
     <!--____________________ NAVIGATION BAR ____________________-->
     <header>
-        <nav class="navbar">
+        <nav>
             <ul class="nav__links">
                 <li><a href=#>Artwork</a></li>
-                <div class="hor__line"></div>
-                <li><a href=#>Artist</a></li>
+                <div class="nav__line"></div>
+                <li><a href=#artist>Artist</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!--____________________ CONTACT SECTION ____________________-->
-        <section class="contact__section">
-            <div class="contact__sidebar">
-                <div class="contact__toggle">
-                </div>
-        
-                <div class="contact__info">
-                    <div class="contact__img">
-                        <img 
-                            src="https://images.pexels.com/photos/25758/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                            alt=""
-                            class="profile__img">
-                    </div>
-                    <div class="contact__socialmedia">
-                        <ul class="contact__links">
-                            <li>
-                                <a href="">
-                                    <span class="icon">
-                                        <i class="uil uil-linkedin-alt"></i>
-                                    </span>
-                                    <span class="contact__icon-text">Linkedin</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="icon">
-                                        <i class="uil uil-envelope"></i>
-                                    </span>
-                                    <span class="contact__icon-text">Email</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="icon">
-                                        <i class="uil uil-instagram"></i>
-                                    </span>
-                                    <span class="contact__icon-text">Instagram</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="icon">
-                                        <i class="uil uil-behance-alt"></i>
-                                    </span>
-                                    <span class="contact__icon-text">Behance</span>
-                                </a>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </div>
-                
+        <!--____________________ CONTACT SIDE BAR ____________________-->
+        <div class="contact__sidebar">
+            <div class="contact__toggle">
             </div>
-        </section>
+    
+            <div class="contact__info">
+                <div class="contact__img">
+                    <img 
+                        src="https://images.pexels.com/photos/25758/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                        alt="profile image"
+                        class="profile__img">
+                </div>
+                <div class="contact__socialmedia">
+                    <ul class="contact__links">
+                        <li>
+                            <a href="">
+                                <span class="contact__icon">
+                                    <i class="uil uil-linkedin-alt"></i>
+                                </span>
+                                <span class="contact__icon-text">Linkedin</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="contact__icon">
+                                    <i class="uil uil-envelope"></i>
+                                </span>
+                                <span class="contact__icon-text">Resume</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="contact__icon">
+                                    <i class="uil uil-instagram"></i>
+                                </span>
+                                <span class="contact__icon-text">Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="contact__icon">
+                                    <i class="uil uil-behance-alt"></i>
+                                </span>
+                                <span class="contact__icon-text">Behance</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        
 
         <!--____________________ HERO SECTION ____________________-->
-        <section class="front__cover page__section">
-            <div class="top__section">
-                <div class="info__section">
+        <section class="hero__section">
+            <div class="hero__top-container">
+                <div class="hero__info">
                     <p>: \artstation\</p>
                     <p class="text__logo">Nuwenosm</p>
                     <p class="text__subtitle">
@@ -100,10 +99,10 @@
                     </p>
                 </div>
 
-                <div class="artwork__img-container">
+                <div class="hero__img-container">
                     <div class="img__border">
                         <img 
-                            class="artwork__img-cover" 
+                            class="hero__img-cover" 
                             src="https://images.pexels.com/photos/1624630/pexels-photo-1624630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
                             alt="white flower" 
                         />
@@ -112,13 +111,13 @@
                 </div>
             </div>
     
-            <div class="bot__section">
-                <div class="view__work">
+            <div class="hero__bot-container">
+                <div class="hero__skills-pointer">
                     <div class="text__title">View<br>Collection</div>
-                    <img class="title__arrow" src="img/Arrow 1.png" alt="">
+                    <img class="hero__arrow" src="img/Arrow 1.png" alt="">
                 </div>
     
-                <div class="info__work">
+                <div class="hero__skills">
                     <div class="title__small">UX/UI<br />Web Design</div>
                     <div class="title__small">Full-Stack <br />Application</div>
                     <div class="title__small">3D-Animation<br /> Graphic Design</div>
@@ -127,22 +126,25 @@
         </section>
 
         <!--____________________ Studio SECTION ____________________-->
-        <section class="studio__section page__section">
-            <div class="studio__info">
-                <div class="text__title">Nuwenosm@studio</div>
-                <div class="text__subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Praesent at egestas ipsum. Donec ipsum purus, aliquet
-                     et lacinia ac, consequat vel ipsum. Sed tincidunt arcu 
-                     sed lectus sollicitudin
-                </div>
-                <div class="text__link">
-                    Discover recent works
-                    <i class="uil uil-arrow-right"></i>
-                </div>
-                <div class="text__link">
-                    Connect with me
-                    <i class="uil uil-arrow-right"></i>
+        <section class="studio__section page__container" >
+            
+            <div class="">
+                <div class="studio__info">
+                    <div class="text__title">Nuwenosm@studio</div>
+                    <div class="text__subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Praesent at egestas ipsum. Donec ipsum purus, aliquet
+                         et lacinia ac, consequat vel ipsum. Sed tincidunt arcu 
+                         sed lectus sollicitudin
+                    </div>
+                    <div class="text__link">
+                        Discover recent works
+                        <i class="uil uil-arrow-right"></i>
+                    </div>
+                    <div class="text__link">
+                        Connect with me
+                        <i class="uil uil-arrow-right"></i>
+                    </div>
                 </div>
             </div>
 
@@ -236,7 +238,7 @@
         </section>
 
         <!--____________________ ABOUT SECTION ____________________-->
-        <section class="about__section page__section">
+        <section id="artist" class="about__section page__container">
             <div class="about__left">
                 <div class="about__line"></div>
                 <div class="about__title">
@@ -278,7 +280,7 @@
         </section>
 
         <!--____________________ MAIL SECTION ____________________-->
-        <div class="mail__section page__section">
+        <div class="mail__section page__container">
             <div class="mail__container">
                 <div class="mail__title">Mail</div>
                 <div class="mail__links">

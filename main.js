@@ -17,7 +17,7 @@
 
 
 const header = document.querySelector("header");
-const sectionOne = document.querySelector(".front__cover");
+const sectionOne = document.querySelector(".hero__section");
 
 const sectionOneOptions = {
   rootMargin: "-300px 0px 0px 0px"

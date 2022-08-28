@@ -121,7 +121,6 @@ header {
     border: 1px solid var(--clr-dark);
     color: var(--clr-dark);
 }
-
 .nav__links {
     width: 600px;
     overflow: hidden;
@@ -138,15 +137,15 @@ header {
 .navbar__scrolled .nav__links li a {
     color: var(--clr-dark);
 }
-.nav__links .hor__line {
+.nav__links .nav__line {
     width: 150px;
     height: 1.5px;
     background-color: var(--clr-light);
 }
-.navbar__scrolled .hor__line {
+.navbar__scrolled .nav__line {
     background-color: var(--clr-dark);
 }
-/*========================= CONTACT SECTION =========================*/
+/*========================= CONTACT SIDE BAR =========================*/
 .contact__sidebar {
     position: fixed;
     bottom: 0;
@@ -240,7 +239,7 @@ header {
     color: var(--clr-light);
 }
 
-.contact__sidebar .contact__links li a .icon {
+.contact__sidebar .contact__links li a .contact__icon {
     position: relative;
     min-width: 60px;
     height: 50px;
@@ -262,34 +261,32 @@ header {
 }
 
 /*========================= REUSE SECTION =========================*/
-.page__section {
+.page__container {
+    height: 100vh;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 55% 40%;
+}
+
+/*========================= HERO SECTION =========================*/
+.hero__section {
     height: 100vh;
 }
-.top__section {
+.hero__top-container {
     height: 70vh;
+    padding: 60px;
     color: var(--clr-light);
     background-color: var(--clr-gray);
-    padding: 60px;
 
     display: grid;
     grid-template-columns: 55% 40%;
 }
-.bot__section {
-    height: 30vh;
-    width: 100%;
-    padding-left: 60px;
-
-    display: flex;
-    align-items: center;
-}
-.info__section {
+.hero__info {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
-
-/*========================= Artwork SECTION =========================*/
-.artwork__img-container {
+.hero__img-container {
     display: flex;
     justify-content: center;
 }
@@ -302,17 +299,32 @@ header {
     display: flex;
     justify-content: center;
 }
-.artwork__img-cover {
+.hero__img-cover {
     height: 500px;
     width: 100%;
     margin-bottom: 4rem;
     object-fit: cover;
 }
-.title__arrow {
+
+.hero__bot-container {
+    height: 30vh;
+    width: 100%;
+    padding-left: 60px;
+
+    display: flex;
+    align-items: center;
+}
+.hero__arrow {
     margin-top: 20px;
     width: 300px;
 }
-.info__work {
+.hero__skills-pointer {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero__skills {
     width: 800px;
     height: 160px;
     margin-left: 30px;
@@ -322,19 +334,8 @@ header {
     align-items: flex-end;
     justify-content: space-around;
 }
-.view__work {
-    height: 180px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 /*========================= Studio SECTION =========================*/
-.studio__section {
-    padding: 60px;
-    display: grid;
-    grid-template-columns: 55% 40%;
-}
 .studio__info {
     width: 600px;
     margin-top: 150px;
@@ -432,11 +433,6 @@ header {
 }
 
 /*========================= About SECTION =========================*/
-.about__section {
-    padding: 60px;
-    display: grid;
-    grid-template-columns: 55% 45%;
-}
 
 .about__left {
     width: 600px;
@@ -487,9 +483,6 @@ header {
 }
 
 /*========================= MAIL SECTION =========================*/
-.mail__section {
-    padding: 60px;
-}
 .mail__container {
     margin-top: 150px;
     height: 550px;
