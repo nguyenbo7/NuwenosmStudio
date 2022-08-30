@@ -57,6 +57,39 @@ contact__toggle.onclick = function() {
     contact__sidebar.classList.toggle('contact__active')
 }
 
+// ==================== Swiper JS ====================
+// let swiper = new Swiper(".studio__imgs-container", {
+//     effect: "coverflow",
+//     grabCursor: true,
+//     centeredSlides: true,
+//     slidesPerView: "auto",
+//     coverflowEffect: {
+//       rotate: 10,
+//       stretch: 0,
+//       depth: 100,
+//       modifier: 1,
+//       slideShadows: true,
+//     },
+//     pagination: {
+//       el: ".swiper-pagination",
+//     },
+// });
+let swiper = new Swiper(".studio__imgs-container", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
 // ==================== Circular Text ====================
 // const text = document.querySelector(".circle__text p");
 // text.innerHTML = text.innerText.split("").map(
