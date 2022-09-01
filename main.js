@@ -1,21 +1,4 @@
-//*==================== Nav Bar Hide on Scrolling Down ====================*/
-// let prevScrollpos = window.pageYOffset;
-// window.onscroll = () => {
-//     let currentScrollPos = window.pageYOffset;
-//     if (prevScrollpos > currentScrollPos) 
-//     {
-//         document.getElementById("navbar").style.top = "0";
-//     } 
-//     else 
-//     {
-//         document.getElementById("navbar").style.top = "-124px";
-//     }
-//     prevScrollpos = currentScrollPos;
-// }
-
-// const navBar = document.querySelectorAll('navbar');
-
-
+//*==================== Nav Bar Change color on Scrolling Down ====================*/
 const header = document.querySelector("header");
 const sectionOne = document.querySelector(".hero__section");
 
@@ -40,14 +23,6 @@ sectionOneOptions);
 sectionOneObserver.observe(sectionOne);
 
 
-//*==================== Accordion Experience ====================*/
-const accordion = document.getElementsByClassName('accordion__item');
-
-for (let i=0; i<accordion.length; i++) {
-  accordion[i].addEventListener('click', function () {
-    this.classList.toggle('active')
-  })
-}
 
 // ==================== Contact JS ====================
 const contact__toggle = document.querySelector('.contact__toggle');
@@ -58,22 +33,6 @@ contact__toggle.onclick = function() {
 }
 
 // ==================== Swiper JS ====================
-// let swiper = new Swiper(".studio__imgs-container", {
-//     effect: "coverflow",
-//     grabCursor: true,
-//     centeredSlides: true,
-//     slidesPerView: "auto",
-//     coverflowEffect: {
-//       rotate: 10,
-//       stretch: 0,
-//       depth: 100,
-//       modifier: 1,
-//       slideShadows: true,
-//     },
-//     pagination: {
-//       el: ".swiper-pagination",
-//     },
-// });
 let swiper = new Swiper(".studio__imgs-container", {
     slidesPerView: 4,
     spaceBetween: 40,
