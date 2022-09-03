@@ -57,7 +57,6 @@
 }
 .text__subtitle {
     font-size: 1.125rem;
-    font-weight: var(--fw-thin);
     margin-top: 5px;
 }
 /*____________________ Button ____________________*/
@@ -110,90 +109,53 @@ img {
 .mandatory__scroll > section {
     scroll-snap-align: center;
 }
-
-/*========================= NAVIGATION BAR =========================*/
-header {
-    height: 4rem;
-    position: fixed;
-    margin: 60px 0 0 60px;
-    z-index: var(--z-highest);
-    transition: 250ms ease-in;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    background-color: var(--clr-gray);
-    border: 1px solid var(--clr-light);
-}
-.navbar__scrolled {
-    background-color: var(--clr-white);
-    border: 1px solid var(--clr-dark);
-    color: var(--clr-dark);
-}
-.nav__links {
-    width: 600px;
-    overflow: hidden;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.nav__links li a {
-    color: var(--clr-light);
-    font-size: var(--fs-subtext);
-    font-weight: var(--fw-thin);
-}
-.navbar__scrolled .nav__links li a {
-    color: var(--clr-dark);
-}
-.nav__links .nav__line {
-    width: 150px;
-    height: 1.5px;
-    background-color: var(--clr-light);
-}
-.navbar__scrolled .nav__line {
-    background-color: var(--clr-dark);
-}
 /*========================= CONTACT SIDE BAR =========================*/
 .contact__sidebar {
     position: fixed;
-    bottom: 0;
-    right: 0;
+    top: 0;
+    left: 0;
     z-index: var(--z-high);
-    overflow: hidden;
+    overflow-x: hidden;
 
-    width: 150px;
-    min-height: 280px;
+    width: 80px;
+    height: 4rem;
     letter-spacing: 1.5px;
     background-color: var(--clr-white);
-    box-shadow: -20px 20px 50px rgba(0,0,0,0.15);
-    transition: 0.5s;
+    transition: 1s ease-in-out;
 
     display: flex;
     align-items: flex-end;
     flex-direction: column;
 }
 .contact__sidebar.contact__active {
-    width: 450px;
+    width: 600px;
+    height: 30%;
+    margin-left: 60px;
+    margin-top: 60px;
+    border: 1px solid black;
 }
 .contact__sidebar .contact__toggle {
     position: relative;
-    height: 60px;
+    height: 4rem;
     width: 100%;
     cursor: pointer;
-
+    background-color: var(--clr-gray);
+    
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.contact__sidebar.contact__active .contact__toggle {
+    justify-content: start;
+    padding-left: 20px;
 }
 
 .contact__sidebar .contact__toggle::before {
     content: '';
     position: absolute;
     width: 35px;
-    height: 3.75px;
-    background: var(--clr-dark);
+    height: 3.5px;
+    background: var(--clr-light);
     transform: translateY(-5px);
     transition: 0.5s;
 }
@@ -201,8 +163,8 @@ header {
     content: '';
     position: absolute;
     width: 35px;
-    height: 1.75px;
-    background: var(--clr-dark);
+    height: 2px;
+    background: var(--clr-light);
     transform: translateY(5px);
     transition: 0.5s;
 }
@@ -214,12 +176,23 @@ header {
     transform:  translateY(0px) rotate(-45deg);
 }
 .contact__info {
+    display: none;
+}
+.contact__sidebar.contact__active .contact__info {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .contact__img {
-    width: 180px;
+    width: 40%;
     height: 180px;
+    margin-right: 5%;
+    /* background-color: #001AFF; */
+}
+.contact__socialmedia {
+    width: 40%;
+    /* background-color: red; */
 }
 
 .profile__img {
@@ -285,8 +258,6 @@ header {
 .hero__top-container {
     height: 70vh;
     padding: 60px;
-    color: var(--clr-light);
-    background-color: var(--clr-gray);
 
     display: grid;
     grid-template-columns: 55% 45%;
@@ -303,16 +274,16 @@ header {
 .img__border {
     width: 550px;
     height: 580px;
-    border: 2px solid var(--clr-light);
+    border: 1.5px solid var(--clr-gray);
     background-color: var(--clr-white);
 
     display: flex;
     justify-content: center;
 }
 .hero__img-cover {
-    width: 100%;
-    height: 500px;
-    margin-bottom: 4rem;
+    width: 540px;
+    height: 510px;
+    margin: 5px 5px 65px 5px;
     object-fit: cover;
 }
 

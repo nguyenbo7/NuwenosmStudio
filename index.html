@@ -16,283 +16,315 @@
     <title>NGUYENOSM</title>
 </head>
 <body>
-    <!--____________________ NAVIGATION BAR ____________________-->
-    <header>
-        <nav>
-            <ul class="nav__links">
-                <li><a href=#>Artwork</a></li>
-                <div class="nav__line"></div>
-                <li><a href=#artist>Artist</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!--____________________ CONTACT SIDE BAR ____________________-->
+    <div class="contact__sidebar contact__active">
+        <div class="contact__toggle">
+        </div>
 
-    <main>
-        <!--____________________ CONTACT SIDE BAR ____________________-->
-        <div class="contact__sidebar">
-            <div class="contact__toggle">
+        <div class="contact__info">
+            <div class="contact__img">
+                <img 
+                    src="https://images.pexels.com/photos/1624630/pexels-photo-1624630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
+                    alt="profile image"
+                    class="profile__img"
+                />
+            </div>
+            <div class="contact__socialmedia">
+                <ul class="contact__links">
+                    <li>
+                        <a href="">
+                            <span class="contact__icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </span>
+                            <span class="contact__icon-text">Linkedin</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="contact__icon">
+                                <i class="uil uil-envelope"></i>
+                            </span>
+                            <span class="contact__icon-text">Resume</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="contact__icon">
+                                <i class="uil uil-instagram"></i>
+                            </span>
+                            <span class="contact__icon-text">Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="contact__icon">
+                                <i class="uil uil-behance-alt"></i>
+                            </span>
+                            <span class="contact__icon-text">Behance</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="mandatory__scroll">
+        <!--____________________ HERO SECTION ____________________-->
+        <section class="hero__section">
+            <div class="hero__top-container">
+                <div class="hero__info">
+                    <p>: \artstation\</p>
+                    <p class="text__logo">Nuwenosm</p>
+                    <p class="text__subtitle">
+                        a place where each opinion is an art itself.
+                    </p>
+                    <p class="text__subtitle">
+                        a thought of a non-existence definition of art.
+                    </p>
+                    <p class="text__subtitle">
+                        a collection of hidden beauties from everyday life.
+                    </p>
+                </div>
+
+                <div class="hero__img-container">
+                    <div class="img__border">
+                        <img 
+                            class="hero__img-cover" 
+                            src="https://images.pexels.com/photos/1624630/pexels-photo-1624630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
+                            alt="white flower" 
+                        />
+                    </div>
+                </div>
             </div>
     
-            <div class="contact__info">
-                <div class="contact__img">
-                    <img 
-                        src="https://images.pexels.com/photos/25758/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                        alt="profile image"
-                        class="profile__img">
+            <div class="hero__bot-container">
+                <div class="hero__skills-pointer">
+                    <div class="text__title">View<br>Collection</div>
+                    <img class="hero__arrow" src="img/Arrow 1.png" alt="">
                 </div>
-                <div class="contact__socialmedia">
-                    <ul class="contact__links">
-                        <li>
-                            <a href="">
-                                <span class="contact__icon">
-                                    <i class="uil uil-linkedin-alt"></i>
-                                </span>
-                                <span class="contact__icon-text">Linkedin</span>
+    
+                <div class="hero__skills">
+                    <div class="title__small">UX/UI<br />Web Design</div>
+                    <div class="title__small">Full-Stack <br />Application</div>
+                    <div class="title__small">3D-Animation<br /> Graphic Design</div>
+                </div>
+            </div>
+        </section>
+
+        <!--____________________ Studio SECTION ____________________-->
+        <section class="studio__section" >
+            <div class="studio__top-container">
+                <div class="studio__info">
+                    <div class="text__title">Nuwenosm@studio</div>
+                    <div class="text__subtitle">
+                        Each collection is made up of 9 amazing coding projects, 
+                        inspired by artists all over the world. 
+                        Each piece is a key to uncovering the last 10th 
+                        invisible matter of our daily lives.
+                        <br /><br />
+                        We are proud to contribute our effort & passion to everyone 
+                        and sincerely learn from every single idea.
+                        <br /><br />
+                        Love you all.
+                    </div>
+                    <div class="text__link">
+                        Discover 2022 Collection
+                        <i class="uil uil-arrow-right"></i>
+                    </div>
+                    <div class="text__link">
+                        Connect with the Artist
+                        <i class="uil uil-arrow-right"></i>
+                    </div>
+                </div>
+            
+                <div class="studio__work">
+                    <div class="accordion__container">
+                        <hr class="accordion__line">
+                        <div class="accordion__item" id="work__item-1">
+                            <a class="accordion__link" href="#work__item-1">
+                                <div class="accordion__label">
+                                    <div class="accordion__title">Modern Restaurant Web Mockup</div>
+                                    <ul class="accordion__tags">
+                                        <li>#Figma</li>
+                                        <li>#Blender</li>
+                                        <li>#Illustrator</li>
+                                        <li>#Photoshop</li>
+                                    </ul>
+                                </div>
+                                <i class="uil uil-plus accordion__sign"></i>
+                                <i class="uil uil-times accordion__sign"></i>
                             </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span class="contact__icon">
-                                    <i class="uil uil-envelope"></i>
-                                </span>
-                                <span class="contact__icon-text">Resume</span>
+                            <div class="accordion__content">
+                                <div class="accordion__text"> 
+                                    Hypertext Markup Language 
+                                    (HTML) is a computer language that 
+                                    makes up most web pages and online applications. 
+                                    A hypertext is a text that is used to 
+                                    reference other pieces of text, while a markup 
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="accordion__line">
+                        <div class="accordion__item" id="work__item-2">
+                            <a class="accordion__link" href="#work__item-2">
+                                <div class="accordion__label">
+                                    <div class="accordion__title">Personal-Planning Application</div>
+                                    <ul class="accordion__tags">
+                                        <li>#MongoDB</li>
+                                        <li>#Express</li>
+                                        <li>#React</li>
+                                        <li>#Node</li>
+                                    </ul>
+                                </div>
+                                <i class="uil uil-plus accordion__sign"></i>
+                                <i class="uil uil-times accordion__sign"></i>
                             </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span class="contact__icon">
-                                    <i class="uil uil-instagram"></i>
-                                </span>
-                                <span class="contact__icon-text">Instagram</span>
+                            <div class="accordion__content">
+                                <div class="accordion__text"> 
+                                    Hypertext Markup Language 
+                                    (HTML) is a computer language that 
+                                    makes up most web pages and online applications. 
+                                    A hypertext is a text that is used to 
+                                    reference other pieces of text, while a markup 
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="accordion__line">
+                        <div class="accordion__item" id="work__item-3">
+                            <a class="accordion__link" href="#work__item-3">
+                                <div class="accordion__label">
+                                    <div class="accordion__title">Mono-Map</div>
+                                    <ul class="accordion__tags">
+                                        <li>#MongoDB</li>
+                                        <li>#Express</li>
+                                        <li>#React</li>
+                                        <li>#Node</li>
+                                    </ul>
+                                </div>
+                                <i class="uil uil-plus accordion__sign"></i>
+                                <i class="uil uil-times accordion__sign"></i>
                             </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span class="contact__icon">
-                                    <i class="uil uil-behance-alt"></i>
-                                </span>
-                                <span class="contact__icon-text">Behance</span>
+                            <div class="accordion__content">
+                                <div class="accordion__text"> 
+                                    Hypertext Markup Language 
+                                    (HTML) is a computer language that 
+                                    makes up most web pages and online applications. 
+                                    A hypertext is a text that is used to 
+                                    reference other pieces of text, while a markup 
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="accordion__line">
+                        <div class="accordion__item" id="work__item-4">
+                            <a class="accordion__link" href="#work__item-4">
+                                <div class="accordion__label">
+                                    <div class="accordion__title">3D Cartoon Characters</div>
+                                    <ul class="accordion__tags">
+                                        <li>#Figma</li>
+                                        <li>#Sketch</li>
+                                        <li>#Adobe</li>
+                                        <li>#Invision</li>
+                                        <li>#Protopie</li>
+                                    </ul>
+                                </div>
+                                <i class="uil uil-plus accordion__sign"></i>
+                                <i class="uil uil-times accordion__sign"></i>
                             </a>
-                        </li>
-                        
-                    </ul>
+                            <div class="accordion__content">
+                                <div class="accordion__text"> 
+                                    Hypertext Markup Language 
+                                    (HTML) is a computer language that 
+                                    makes up most web pages and online applications. 
+                                    A hypertext is a text that is used to 
+                                    reference other pieces of text, while a markup 
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
             
-        </div>
 
-        <div class="mandatory__scroll">
-            <!--____________________ HERO SECTION ____________________-->
-            <section class="hero__section">
-                <div class="hero__top-container">
-                    <div class="hero__info">
-                        <p>: \artstation\</p>
-                        <p class="text__logo">Nuwenosm</p>
-                        <p class="text__subtitle">
-                            a place where each opinion is an art itself.
-                        </p>
-                        <p class="text__subtitle">
-                            a thought of a non-existence definition of art.
-                        </p>
-                        <p class="text__subtitle">
-                            a collection of hidden beauties from everyday life.
-                        </p>
+            <div class="studio__imgs-container swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://images.pexels.com/photos/2524815/pexels-photo-2524815.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
                     </div>
-
-                    <div class="hero__img-container">
-                        <div class="img__border">
-                            <img 
-                                class="hero__img-cover" 
-                                src="https://images.pexels.com/photos/1624630/pexels-photo-1624630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
-                                alt="white flower" 
-                            />
-                        </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.pexels.com/photos/3952229/pexels-photo-3952229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.pexels.com/photos/3683190/pexels-photo-3683190.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.pexels.com/photos/3738117/pexels-photo-3738117.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.pexels.com/photos/3683190/pexels-photo-3683190.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.pexels.com/photos/3738117/pexels-photo-3738117.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
                     </div>
                 </div>
-        
-                <div class="hero__bot-container">
-                    <div class="hero__skills-pointer">
-                        <div class="text__title">View<br>Collection</div>
-                        <img class="hero__arrow" src="img/Arrow 1.png" alt="">
-                    </div>
-        
-                    <div class="hero__skills">
-                        <div class="title__small">UX/UI<br />Web Design</div>
-                        <div class="title__small">Full-Stack <br />Application</div>
-                        <div class="title__small">3D-Animation<br /> Graphic Design</div>
-                    </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--____________________ ABOUT SECTION ____________________-->
+        <section id="artist" class="about__section">
+            <div class="about__left about__container">
+                <div class="about__line"></div>
+                <div class="about__title">
+                    Nguyen Chau is a self-taught web developer 
+                    & graphic designer, who is passionate about 
+                    engineering & art.
                 </div>
-            </section>
-
-            <!--____________________ Studio SECTION ____________________-->
-            <section class="studio__section" >
-                <div class="studio__top-container">
-                    <div class="studio__info">
-                        <div class="text__title">Nuwenosm@studio</div>
-                        <div class="text__subtitle">
-                            Each collection is made up of 9 amazing coding projects, 
-                            inspired by artists all over the world. 
-                            Each piece is a key to uncovering the last 10th 
-                            invisible matter of our daily lives.
-                            <br /><br />
-                            We are proud to contribute our effort & passion to everyone 
-                            and sincerely learn from every single idea.
-                            <br /><br />
-                            Love you all.
-                        </div>
-                        <div class="text__link">
-                            Discover 2022 Collection
-                            <i class="uil uil-arrow-right"></i>
-                        </div>
-                        <div class="text__link">
-                            Connect with the Artist
-                            <i class="uil uil-arrow-right"></i>
-                        </div>
-                    </div>
-                
-                    <div class="studio__work">
-                        <div class="accordion__container">
-                            <hr class="accordion__line">
-                            <div class="accordion__item" id="work__item-1">
-                                <a class="accordion__link" href="#work__item-1">
-                                    <div class="accordion__label">
-                                        <div class="accordion__title">Modern Restaurant Web Mockup</div>
-                                        <ul class="accordion__tags">
-                                            <li>#Figma</li>
-                                            <li>#Blender</li>
-                                            <li>#Illustrator</li>
-                                            <li>#Photoshop</li>
-                                        </ul>
-                                    </div>
-                                    <i class="uil uil-plus accordion__sign"></i>
-                                    <i class="uil uil-times accordion__sign"></i>
-                                </a>
-                                <div class="accordion__content">
-                                    <div class="accordion__text"> 
-                                        Hypertext Markup Language 
-                                        (HTML) is a computer language that 
-                                        makes up most web pages and online applications. 
-                                        A hypertext is a text that is used to 
-                                        reference other pieces of text, while a markup 
-                                    </div>
-                                </div>
-                            </div>
-
-                            <hr class="accordion__line">
-                            <div class="accordion__item" id="work__item-2">
-                                <a class="accordion__link" href="#work__item-2">
-                                    <div class="accordion__label">
-                                        <div class="accordion__title">Personal-Planning Application</div>
-                                        <ul class="accordion__tags">
-                                            <li>#MongoDB</li>
-                                            <li>#Express</li>
-                                            <li>#React</li>
-                                            <li>#Node</li>
-                                        </ul>
-                                    </div>
-                                    <i class="uil uil-plus accordion__sign"></i>
-                                    <i class="uil uil-times accordion__sign"></i>
-                                </a>
-                                <div class="accordion__content">
-                                    <div class="accordion__text"> 
-                                        Hypertext Markup Language 
-                                        (HTML) is a computer language that 
-                                        makes up most web pages and online applications. 
-                                        A hypertext is a text that is used to 
-                                        reference other pieces of text, while a markup 
-                                    </div>
-                                </div>
-                            </div>
-
-                            <hr class="accordion__line">
-                            <div class="accordion__item" id="work__item-3">
-                                <a class="accordion__link" href="#work__item-3">
-                                    <div class="accordion__label">
-                                        <div class="accordion__title">Mono-Map</div>
-                                        <ul class="accordion__tags">
-                                            <li>#MongoDB</li>
-                                            <li>#Express</li>
-                                            <li>#React</li>
-                                            <li>#Node</li>
-                                        </ul>
-                                    </div>
-                                    <i class="uil uil-plus accordion__sign"></i>
-                                    <i class="uil uil-times accordion__sign"></i>
-                                </a>
-                                <div class="accordion__content">
-                                    <div class="accordion__text"> 
-                                        Hypertext Markup Language 
-                                        (HTML) is a computer language that 
-                                        makes up most web pages and online applications. 
-                                        A hypertext is a text that is used to 
-                                        reference other pieces of text, while a markup 
-                                    </div>
-                                </div>
-                            </div>
-
-                            <hr class="accordion__line">
-                            <div class="accordion__item" id="work__item-4">
-                                <a class="accordion__link" href="#work__item-4">
-                                    <div class="accordion__label">
-                                        <div class="accordion__title">3D Cartoon Characters</div>
-                                        <ul class="accordion__tags">
-                                            <li>#Figma</li>
-                                            <li>#Sketch</li>
-                                            <li>#Adobe</li>
-                                            <li>#Invision</li>
-                                            <li>#Protopie</li>
-                                        </ul>
-                                    </div>
-                                    <i class="uil uil-plus accordion__sign"></i>
-                                    <i class="uil uil-times accordion__sign"></i>
-                                </a>
-                                <div class="accordion__content">
-                                    <div class="accordion__text"> 
-                                        Hypertext Markup Language 
-                                        (HTML) is a computer language that 
-                                        makes up most web pages and online applications. 
-                                        A hypertext is a text that is used to 
-                                        reference other pieces of text, while a markup 
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
+                <div class="about__subtitle">
+                    5+ years exprience 20+ projects
                 </div>
-                
-
-                <div class="studio__imgs-container swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="https://images.pexels.com/photos/2524815/pexels-photo-2524815.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://images.pexels.com/photos/3952229/pexels-photo-3952229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://images.pexels.com/photos/3683187/pexels-photo-3683187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://images.pexels.com/photos/3683190/pexels-photo-3683190.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://images.pexels.com/photos/3738117/pexels-photo-3738117.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://images.pexels.com/photos/3683190/pexels-photo-3683190.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://images.pexels.com/photos/3738117/pexels-photo-3738117.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
+                <div class="about__img-container-left">
+                    <img 
+                            class="about__img" 
+                            src="https://images.pexels.com/photos/1624630/pexels-photo-1624630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
+                            alt="white flower" 
+                        />
                 </div>
-            </section>
+            </div>
 
-            <!--____________________ ABOUT SECTION ____________________-->
-            <section id="artist" class="about__section">
-                <div class="about__left about__container">
+            <div class="about__right about__container">
+                <div class="about__line"></div>
+                <div class="about__title">
+                    Lorem ipsum dolor sit amet, alaosv 
+                    adipiscing elit. Proin nunc nunc
+                </div>
+                <div class="about__subtitle">
+                    03/01/02
+                </div>
+                <!-- <div class="about__img-container-right">
+                    <img 
+                            class="about__img-right" 
+                            src="https://images.pexels.com/photos/1624630/pexels-photo-1624630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
+                            alt="white flower" 
+                        />
+                </div> -->
+                <div class="about__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at egestas ipsum. Donec ipsum purus, aliquet et lacinia ac, consequat vel ipsum. Sed tincidunt arcu sed lectus sollicitudin, vitae facilisis mi porta. In porta enim nec diam suscipit, et interdum felis finibus. Phasellus dignissim est in felis tincidunt molestie. In rhoncus sit amet tortor a tempus. Vestibulum lacinia odio ac erat fermentum varius. Curabitur vestibulum massa a eros faucibus malesuada. Nulla consectetur laoreet tristique. Nunc venenatis ac libero hendrerit bibendum. Vivamus finibus purus at enim tincidunt, sit amet suscipit sapien maximus. Aliquam iaculis lacus sollicitudin, sollicitudin tortor a, gravida massa. Vivamus felis libero, ornare vel lobortis at, placerat vel erat. Mauris condimentum vulputate purus sit amet congue. Nunc vel pulvinar augue.
+                </div>
+            </div>
+
+            
+            <div class="about__mid about__container">
+
+                <div class="about__mid1">
                     <div class="about__line"></div>
                     <div class="about__title">
                         Lorem ipsum dolor sit amet, alaosv 
@@ -301,16 +333,16 @@
                     <div class="about__subtitle">
                         03/01/02
                     </div>
-                    <div class="about__img-container-left">
+                    <div class="about__img-container-mid">
                         <img 
-                                class="about__img" 
-                                src="https://images.pexels.com/photos/1624630/pexels-photo-1624630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
-                                alt="white flower" 
-                            />
+                            class="about__img" 
+                            src="https://images.pexels.com/photos/1624630/pexels-photo-1624630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
+                            alt="white flower" 
+                        />
                     </div>
                 </div>
 
-                <div class="about__right about__container">
+                <div class="about__mid2">
                     <div class="about__line"></div>
                     <div class="about__title">
                         Lorem ipsum dolor sit amet, alaosv 
@@ -319,79 +351,36 @@
                     <div class="about__subtitle">
                         03/01/02
                     </div>
-                    <!-- <div class="about__img-container-right">
+                    <!-- <div class="about__img-container-">
                         <img 
-                                class="about__img-right" 
-                                src="https://images.pexels.com/photos/1624630/pexels-photo-1624630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
-                                alt="white flower" 
-                            />
+                            class="about__img" 
+                            src="https://images.pexels.com/photos/1624630/pexels-photo-1624630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
+                            alt="white flower" 
+                        />
                     </div> -->
-                    <div class="about__subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at egestas ipsum. Donec ipsum purus, aliquet et lacinia ac, consequat vel ipsum. Sed tincidunt arcu sed lectus sollicitudin, vitae facilisis mi porta. In porta enim nec diam suscipit, et interdum felis finibus. Phasellus dignissim est in felis tincidunt molestie. In rhoncus sit amet tortor a tempus. Vestibulum lacinia odio ac erat fermentum varius. Curabitur vestibulum massa a eros faucibus malesuada. Nulla consectetur laoreet tristique. Nunc venenatis ac libero hendrerit bibendum. Vivamus finibus purus at enim tincidunt, sit amet suscipit sapien maximus. Aliquam iaculis lacus sollicitudin, sollicitudin tortor a, gravida massa. Vivamus felis libero, ornare vel lobortis at, placerat vel erat. Mauris condimentum vulputate purus sit amet congue. Nunc vel pulvinar augue.
-                    </div>
                 </div>
 
                 
-                <div class="about__mid about__container">
+            </div>
+            
+        </section>
 
-                    <div class="about__mid1">
-                        <div class="about__line"></div>
-                        <div class="about__title">
-                            Lorem ipsum dolor sit amet, alaosv 
-                            adipiscing elit. Proin nunc nunc
-                        </div>
-                        <div class="about__subtitle">
-                            03/01/02
-                        </div>
-                        <div class="about__img-container-mid">
-                            <img 
-                                class="about__img" 
-                                src="https://images.pexels.com/photos/1624630/pexels-photo-1624630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
-                                alt="white flower" 
-                            />
-                        </div>
-                    </div>
-
-                    <div class="about__mid2">
-                        <div class="about__line"></div>
-                        <div class="about__title">
-                            Lorem ipsum dolor sit amet, alaosv 
-                            adipiscing elit. Proin nunc nunc
-                        </div>
-                        <div class="about__subtitle">
-                            03/01/02
-                        </div>
-                        <!-- <div class="about__img-container-">
-                            <img 
-                                class="about__img" 
-                                src="https://images.pexels.com/photos/1624630/pexels-photo-1624630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
-                                alt="white flower" 
-                            />
-                        </div> -->
-                    </div>
-
-                    
+        <!--____________________ MAIL SECTION ____________________-->
+        <section class="mail__section page__container">
+            <div class="mail__container">
+                <div class="mail__title">Mail</div>
+                <div class="mail__links">
+                    <ul>
+                        <li>Behance /</li>
+                        <li>Linkedin /</li>
+                        <li>Instagram /</li>
+                    </ul>
                 </div>
-                
-            </section>
-
-            <!--____________________ MAIL SECTION ____________________-->
-            <section class="mail__section page__container">
-                <div class="mail__container">
-                    <div class="mail__title">Mail</div>
-                    <div class="mail__links">
-                        <ul>
-                            <li>Behance /</li>
-                            <li>Linkedin /</li>
-                            <li>Instagram /</li>
-                        </ul>
-                    </div>
-                    <div class="mail__barcode">Nuwenosm</div>
-                    <div class="mail__email">nguyenchau030127@gmail.com</div>
-                </div>
-            </section>
-        </div>
-    </main>
+                <div class="mail__barcode">Nuwenosm</div>
+                <div class="mail__email">nguyenchau030127@gmail.com</div>
+            </div>
+        </section>
+    </div>
 
     <!--____________________ Swiper JS ____________________-->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

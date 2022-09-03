@@ -1,28 +1,3 @@
-//*==================== Nav Bar Change color on Scrolling Down ====================*/
-const header = document.querySelector("header");
-const sectionOne = document.querySelector(".hero__section");
-
-const sectionOneOptions = {
-  rootMargin: "-300px 0px 0px 0px"
-};
-
-const sectionOneObserver = new IntersectionObserver(function(
-  entries,
-  sectionOneObserver
-) {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) {
-      header.classList.add("navbar__scrolled");
-    } else {
-      header.classList.remove("navbar__scrolled");
-    }
-  });
-},
-sectionOneOptions);
-
-sectionOneObserver.observe(sectionOne);
-
-
 
 // ==================== Contact JS ====================
 const contact__toggle = document.querySelector('.contact__toggle');
